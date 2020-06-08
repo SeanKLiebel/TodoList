@@ -1,7 +1,6 @@
  import React from 'react';
 import { Menu } from 'antd'
 import { BrowserRouter as Router} from 'react-router-dom';
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 
   import './App.css';
   import ListItems from './ListItems'
@@ -67,6 +66,7 @@ import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/ico
      
     }
    render(){
+    <Router>
     return (
       <div className="App">
         <header>
@@ -80,6 +80,7 @@ import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/ico
           
         </header>
       </div>
+     </Router>
     );
    }
   }
