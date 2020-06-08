@@ -1,5 +1,4 @@
- import React from 'react';
-import { Menu } from 'antd'
+import React from 'react';
 import { BrowserRouter as Router} from 'react-router-dom';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
