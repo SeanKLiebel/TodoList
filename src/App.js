@@ -1,6 +1,8 @@
  import React from 'react';
 import { Menu } from 'antd'
 import { BrowserRouter as Router} from 'react-router-dom';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
 
   import './App.css';
   import ListItems from './ListItems'
