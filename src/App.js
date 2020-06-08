@@ -79,6 +79,25 @@ import Navbar from './components/pages/Navbar';
           <p>{this.state.items.text}</p>
           
             <ListItems items={this.state.items} deleteItem={this.deleteItem} setUpdate={this.setUpdate}/>
+      <NavBar />
+ 
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/features" component={Features}>
+              <Features />
+          </Route>
+          <Route path="/pricing" component={Pricing}>
+            <Pricing />
+          </Route>
+          <Route path="/About" component={About}>
+            <About />
+          </Route>
+          <Route path="/Contact" component={Contact}>
+            <Contact />
+          </Route>
+        </Switch>
           
         </header>
       </div>
