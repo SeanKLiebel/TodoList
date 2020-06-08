@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router,Switch,Route, Link} from "react-router-dom";
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
+import Features from "./Components/Features";
+import Pricing from "./Components/Pricing";
 import Navbar from './components/Navbar';
 
   import './App.css';
