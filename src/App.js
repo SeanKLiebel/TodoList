@@ -1,10 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router,Switch,Route, Link} from "react-router-dom";
-import About from './components/pages/About';
-import Contact from './components/pages/Contact';
-import Features from "./Components/Features";
-import Pricing from "./Components/Pricing";
-import Navbar from './components/Navbar';
 
   import './App.css';
   import ListItems from './ListItems'
@@ -70,7 +64,6 @@ import Navbar from './components/Navbar';
      
     }
    render(){
-    <Router>
     return (
       <div className="App">
         <header>
@@ -81,29 +74,12 @@ import Navbar from './components/Navbar';
           <p>{this.state.items.text}</p>
           
             <ListItems items={this.state.items} deleteItem={this.deleteItem} setUpdate={this.setUpdate}/>
-      <NavBar />
+      
  
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/features" component={Features}>
-              <Features />
-          </Route>
-          <Route path="/pricing" component={Pricing}>
-            <Pricing />
-          </Route>
-          <Route path="/About" component={About}>
-            <About />
-          </Route>
-          <Route path="/Contact" component={Contact}>
-            <Contact />
-          </Route>
-        </Switch>
-          
-        </header>
+      
       </div>
-     </Router>
+     
     );
    }
   }
